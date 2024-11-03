@@ -1,10 +1,11 @@
+import React from "react";
 import "./App.css";
-import Landingpage from "./pages/landing-page";
+import UnauthenticatedApp from "./route/unauthenticated-app";
 
 function App() {
   return (
-    <div className="">
-      <Landingpage />
+    <div>
+      <UnauthenticatedApp />
     </div>
   );
 }
