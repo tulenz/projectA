@@ -24,7 +24,7 @@ function Header() {
   };
 
   return (
-    <section className=" bg-blue-500 text-black flex w-full justify-between items-center  pr-10">
+    <section className="bg-blue-500  text-black min-h-[80px] flex w-full justify-around items-center pr-10 lg:gap-[200px] lg:pr-0 shadow-2xl shadow-slate-900 relative z-10">
       {/* ไอคอนสำหรับเปิด dropdown */}
       <FontAwesomeIcon
         icon={faBuilding}
@@ -45,34 +45,35 @@ function Header() {
               className="p-2 hover:bg-gray-200 cursor-pointer"
               onClick={goToHomePage}
             >
-              หน้าหลัก
+              Home
             </li>
             <li
               className="p-2 hover:bg-gray-200 cursor-pointer"
               onClick={goToAboutPage}
             >
-              เกี่ยวกับ
+              About
             </li>
             <li
               className="p-2 hover:bg-gray-200 cursor-pointer"
               onClick={goToContactPage}
             >
-              ติดต่อบริษัท
+              Contact
             </li>
           </ul>
         </div>
       )}
 
-      <div className="hidden md:flex gap-8 md:min-h-[80px] items-center text-[20px] lg:text-[30px]">
+      <div className="hidden md:flex gap-8 lg:gap-20 min-h-[80px] items-center text-[20px] lg:text-[30px] text-transition duration-500 ">
         <div className="cursor-pointer" onClick={goToHomePage}>
-          หน้าหลัก
+          Home
         </div>
         <div className="cursor-pointer" onClick={goToAboutPage}>
-          เกี่ยวกับ
+          About
         </div>
         <div className="cursor-pointer" onClick={goToContactPage}>
-          ติดต่อบริษัท
+          Contact
         </div>
+        <div>Support</div>
       </div>
     </section>
   );
