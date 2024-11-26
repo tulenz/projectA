@@ -1,11 +1,11 @@
 import Header from "../components/header";
-import Banner from "../components/banner";
+import Contact from "../components/contact";
 
 function Contactpage() {
   return (
     <div className="">
       <Header />
-      <Banner />
+      <Contact />
     </div>
   );
 }
